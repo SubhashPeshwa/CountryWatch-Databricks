@@ -1,4 +1,4 @@
-name: delta_env
+name: countrywatch-databricks
 channels:
   - conda-forge
   - Microsoft
