@@ -1,0 +1,84 @@
+{
+  "dataset_name": "Catalog List from Data Gov website backend",
+  "dataset_uri": "/backend/dmspublic/v1/catalogs",
+  "dataset_public_url": "https://data.gov.in",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Catalog",
+  "table_name": "data_gov_catalog",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      {
+        "name": "_language",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "node_alias",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "published_date",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "body:value",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "changed",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "created",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "field_asset_jurisdiction:name",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_group_name:name",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "field_ministry_department:name",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_sector:name",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "govt_type",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "keywords",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "frequency",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      }
+    ]
+  }
+}
