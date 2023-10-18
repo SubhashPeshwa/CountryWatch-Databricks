@@ -10,6 +10,16 @@ Trends Over Time: Highlight historical trends to show how policies and governanc
 Fact-Checking and Accountability: Enable users to cross-reference official data with other reliable sources to ensure accuracy and transparency.
 
 
+## To Do:-
+
+1. Add SCD to catalog changes (No need to add to metadata as it is tracked by git)
+2. Extract root catalog aggregations and make a report by state/dept etc based on the aggregations, see how it changes - EDA notebook
+3. Analyze trending dataset changes over time and see why they're trending - EDA notebook
+4. Store all resources too (from api.data.gov and data.gov)- Compare with Catalog data and see which is better for EDA
+5. New source - https://directory.apisetu.gov.in/
+
+
+
 ## Run locally using docker
 
 docker build -t spark-jupyter .

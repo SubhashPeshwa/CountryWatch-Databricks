@@ -4,7 +4,7 @@
   "dataset_public_url": "https://data.gov.in/resource/list-lok-sabha-members-english",
   "data_source": "data.gov",
   "dataset_type": "data",
-  "dataset_sector": "Parliament of India",
+  "dataset_sector": "Parliament of india",
   "table_name": "ls_members",
   "table_schema": {
     "type": "struct",
