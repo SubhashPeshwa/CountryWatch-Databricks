@@ -8,6 +8,7 @@ def call_data_gov_api(uri):
 
     url = "https://api.data.gov.in"
     api_key = env.config.api_key
+    print("Test")
     resp_format = "json"
     limit = 500
     offset = 0
