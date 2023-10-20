@@ -14,11 +14,17 @@ from pyspark.sql.types import StructField, StructType, StringType, ArrayType, Ma
 # COMMAND ----------
 
 # List all JSON files in the folder
-data_json_files = [os.path.join("./api_configs/source_data", file) for file in os.listdir("./api_configs/source_data") if file.endswith(".json")]
-catalog_json_files = [os.path.join("./api_configs/source_catalog", file) for file in os.listdir("./api_configs/source_catalog") if file.endswith(".json")]
+# data_json_files = [os.path.join("./api_configs/source_data", file) for file in os.listdir("./api_configs/source_data") if file.endswith(".json")]
+# catalog_json_files = [os.path.join("./api_configs/source_catalog", file) for file in os.listdir("./api_configs/source_catalog") if file.endswith(".json")]
+# json_files = data_json_files
+# json_files.extend(catalog_json_files)
 
-json_files = data_json_files
-json_files.extend(catalog_json_files)
+json_files = []
+
+for dirpath, dirnames, filenames in os.walk("./api_configs"):
+    for file in filenames:
+        if file.endswith(".json"):
+            json_files.append(os.path.join(dirpath, file))
 
 configs = []
 
@@ -53,6 +59,18 @@ df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(table_n
 
 display(spark.sql('DESCRIBE DETAIL default.{};'.format(table_name)))
 display(spark.sql("SELECT * FROM default.{};".format(table_name)))
+
+# COMMAND ----------
+
+spark.sql("DROP TABLE api_configs")
+
+# COMMAND ----------
+
+tables_df = spark.sql("show tables")
+for table in tables_df.collect():
+    print(f"Dropping table {table['tableName']}")
+    spark.sql(f"DROP TABLE {table['tableName']}")
+display(spark.sql("show tables"))
 
 # COMMAND ----------
 

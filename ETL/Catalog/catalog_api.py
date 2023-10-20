@@ -23,14 +23,17 @@ display(api_configs)
 # COMMAND ----------
 
 for api_config in api_configs.collect():
-
+    if api_config['table_name'] == "data_gov_catalog":
+        continue
     table_schema = StructType.fromJson(json.loads(api_config['table_schema'].replace('\\"','"')))
 
     # field_sector = "Lok%20Sabha"
     field_sector = ""
     resp = call_data_gov_catalog(api_config['dataset_uri'], field_sector)
+    print(resp)
+    print(resp.json())
     df = spark.createDataFrame(data=resp.json()['data']['rows'], schema = table_schema)
-    df.write.mode("overwrite").saveAsTable(api_config['table_name'])
+    df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(api_config['table_name'])
 
     display(spark.sql('DESCRIBE DETAIL default.{};'.format(api_config['table_name'])))
     display(spark.sql("SELECT * FROM default.{};".format(api_config['table_name'])))

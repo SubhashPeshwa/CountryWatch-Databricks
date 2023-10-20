@@ -1,7 +1,9 @@
 {
-  "dataset_name": "Trending in Catalog List from Data Gov website backend",
-  "dataset_uri": "/backend/dms/v1/ogdp/hierarchical/new",
+  "dataset_name": "Catalog List from Data Gov website backend",
+  "dataset_uri": "/backend/dmspublic/v1/catalogs",
   "dataset_public_url": "https://data.gov.in",
+  "api_params": "",
+  "api_method": "",
   "data_source": "data.gov",
   "dataset_type": "source catalog",
   "dataset_sector": "Data.gov Catalog",
@@ -124,6 +126,15 @@
       },
       {
         "name": "frequency",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "uuid",
         "type": {
           "type": "array",
           "elementType": "string",
