@@ -1,0 +1,69 @@
+{
+  "dataset_name": "List of Lok Sabha Members (English)",
+  "dataset_uri": "/resource/81153f15-b4da-45b5-a299-f307351c5001",
+  "dataset_public_url": "https://data.gov.in/resource/list-lok-sabha-members-english",
+  "data_source": "data.gov",
+  "dataset_type": "data",
+  "dataset_sector": "Parliament of india",
+  "table_name": "ls_members",
+  "table_schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "sno",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "memberid",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "party",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "constituencies",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "state",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "paddress",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "permanentphone",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "localaddress",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "localphone",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "emailid",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "dataset_name": "List of LOV values for each filter in data.gov",
+  "dataset_uri": "/backend/dms/v1/ogdp/hierarchical/new?_format=json",
+  "dataset_public_url": "https://data.gov.in",
+  "api_params": "",
+  "api_method": "",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Catalog",
+  "table_name": "data_gov_catalog_filters",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      
+    ]
+  }
+}

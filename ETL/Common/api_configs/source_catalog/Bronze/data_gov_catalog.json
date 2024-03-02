@@ -1,0 +1,147 @@
+{
+  "dataset_name": "Catalog List from Data Gov website backend",
+  "dataset_uri": "/backend/dmspublic/v1/catalogs",
+  "dataset_public_url": "https://data.gov.in",
+  "api_params": "",
+  "api_method": "",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Catalog",
+  "table_name": "data_gov_catalog",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      {
+        "name": "_language",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "node_alias",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "published_date",
+        "type": {
+          "type": "array",
+          "elementType": "integer",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "body:value",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "changed",
+        "type": {
+          "type": "array",
+          "elementType": "integer",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "created",
+        "type": {
+          "type": "array",
+          "elementType": "integer",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_asset_jurisdiction:name",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_group_name:name",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_ministry_department:name",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field_sector:name",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "govt_type",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "keywords",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "title",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "frequency",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "uuid",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      }
+    ]
+  }
+}

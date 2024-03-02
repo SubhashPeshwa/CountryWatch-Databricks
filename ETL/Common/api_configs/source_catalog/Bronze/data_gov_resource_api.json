@@ -1,0 +1,94 @@
+{
+  "dataset_name": "Resource List from Data Gov API (not backend)",
+  "dataset_uri": "/lists",
+  "dataset_public_url": "https://api.data.gov.in",
+  "api_params": "",
+  "api_method": "",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Resource",
+  "table_name": "data_gov_resource_api",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "desc",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "created",
+        "type": "integer",
+        "nullable": true, "metadata": {}
+      }
+      ,
+      {
+        "name": "updated",
+        "type": "integer",
+        "nullable": true, "metadata": {}
+      }
+      ,
+      {
+        "name": "created_date",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      }
+      ,
+      {
+        "name": "updated_date",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "catalog_uuid",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      }
+      ,
+      {
+        "name": "org_type",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "org",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "sector",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "field",
+        "type": {
+          "type": "array",
+          "elementType": {
+            "type": "struct",
+            "fields": [
+              {"name": "name", "type": "string", "nullable": true},
+              {"name": "id", "type": "string", "nullable": true},
+              {"name": "type", "type": "string", "nullable": true}
+            ]
+          },
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      }
+    ]
+  }
+}

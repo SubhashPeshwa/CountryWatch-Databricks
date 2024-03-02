@@ -1,0 +1,79 @@
+{
+  "dataset_name": "List of Rajya Sabha Members (English)",
+  "dataset_uri": "/resource/fa52dc7f-7292-4ece-8f07-900322b2c9f9",
+  "dataset_public_url": "https://data.gov.in/resource/list-rajya-sabha-members-english",
+  "data_source": "data.gov",
+  "dataset_type": "data",
+  "dataset_sector": "Parliament of india",
+  "table_name": "rs_members",
+  "table_schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "sno",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "mpcode",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "membername",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "gender",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "party",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "partyname",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "state",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "statename",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "permanentaddress",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "permanentphone",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "localaddress",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      },
+      {
+        "name": "localphone",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "emailid",
+        "type": "string",
+        "nullable": false, "metadata": {}
+      }
+    ]
+  }
+}

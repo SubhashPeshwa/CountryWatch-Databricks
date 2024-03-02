@@ -1,0 +1,219 @@
+{
+  "dataset_name": "Resource List from Data Gov website backend",
+  "dataset_uri": "/backend/dmspublic/v1/resources_noaggs",
+  "dataset_public_url": "https://data.gov.in",
+  "api_params": "",
+  "api_method": "",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Catalog",
+  "table_name": "data_gov_resource_top",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      {
+        "name": "_language",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "is_high_value_dataset",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "node_alias",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "ogdp_download_count",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "ogdp_view_count",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "published_date",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "catalog_title",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "catalog_uuid",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "changed",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "created",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "data_time_period_from",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "data_time_period_to",
+        "type": {
+          "type": "array",
+          "elementType": "long",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "datafile",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "file_format",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "file_size",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "frequency",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "granularity",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "govt_type",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "ministry_department",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "resource_category",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "sector",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "title",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "uuid",
+        "type": {
+          "type": "array",
+          "elementType": "string",
+          "containsNull": true
+        },
+        "nullable": true, "metadata": {}
+      }
+    ]
+  }
+}

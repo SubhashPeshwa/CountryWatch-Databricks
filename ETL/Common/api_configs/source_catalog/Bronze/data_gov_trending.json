@@ -1,0 +1,31 @@
+{
+  "dataset_name": "Trending in Catalog List from Data Gov website backend",
+  "dataset_uri": "/backend/dms/v1/ogdp/hierarchical/new",
+  "dataset_public_url": "https://data.gov.in",
+  "api_params": "",
+  "api_method": "",
+  "data_source": "data.gov",
+  "dataset_type": "source catalog",
+  "dataset_sector": "Data.gov Resource",
+  "table_name": "data_gov_catalog_trending",
+  "table_schema":{
+    "type": "struct",
+    "fields": [
+      {
+        "name": "word",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "created",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      },
+      {
+        "name": "position",
+        "type": "string",
+        "nullable": true, "metadata": {}
+      }
+    ]
+  }
+}
